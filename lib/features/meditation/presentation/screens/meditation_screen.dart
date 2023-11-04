@@ -30,6 +30,15 @@ class _MeditationScreenState extends State<MeditationScreen>
               ],
             ),
           ),
+          Positioned(
+            bottom: 32,
+            left: 32,
+            right: 32,
+            child: ElevatedButton(
+              child: const Text("Re-enroll to Program"),
+              onPressed: () {},
+            ),
+          ),
         ],
       ),
     );
@@ -93,6 +102,7 @@ class _MeditationScreenState extends State<MeditationScreen>
                       label: const Text("View More"),
                     ),
             ),
+            const SizedBox(height: 100),
           ],
         ),
       ),
@@ -107,7 +117,10 @@ class _MeditationScreenState extends State<MeditationScreen>
           const SizedBox(height: 32),
           Text(
             "Stress Management with Yoga",
-            style: Theme.of(context).textTheme.headlineLarge,
+            style: Theme.of(context)
+                .textTheme
+                .headlineLarge
+                ?.copyWith(fontWeight: FontWeight.bold, color: Colors.black),
           ),
           const SizedBox(height: 8),
           const Text("10 Days • 25-30 mins daily"),

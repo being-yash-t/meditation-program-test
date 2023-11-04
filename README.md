@@ -1,6 +1,4 @@
-# meditation
-
-A new Flutter project.
+# meditation [TEST/WIP]
 
 ## Getting Started
 

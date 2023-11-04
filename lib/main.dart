@@ -20,6 +20,16 @@ class MeditationApp extends StatelessWidget {
           background: Colors.white,
           primary: Colors.orange,
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: FilledButton.styleFrom(
+            backgroundColor: Colors.orange,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.all(16),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+          ),
+        ),
         filledButtonTheme: FilledButtonThemeData(
           style: FilledButton.styleFrom(
             shape: RoundedRectangleBorder(
